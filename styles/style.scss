@@ -1,9 +1,9 @@
 /********* Custom Styles *********/
 @import "normalize";
 
-.header{
-    background: black;
-    position: "relative";
-    width: "100%";
-    height: "65vh";
-}
+
+
+
+/********* Pages Styles *********/
+@import "common";
+@import "homepage";
