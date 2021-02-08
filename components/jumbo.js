@@ -3,10 +3,10 @@
 const Jumbo = () => {
     return (
         //  TOP CONTAINER
-        <div className="container-md jumbo-container">
+        <div className="container jumbo-container">
             {/* HERO VIEW */}
             <div className="row hero-section">
-                <div className="col left__side">
+                <div className="col-sm left__side">
                     <div className="row info">
                         <h1 className="hero-slogan">
                             We give your business an edge over your competitors!
@@ -16,7 +16,7 @@ const Jumbo = () => {
                         </p>
                     </div>
                     <div className="row email-input-field">
-                        <div class="form-group">
+                        <div className="form-group">
                             <input type="email" className="form-control" id="input-email" aria-describedby="emailHelp" placeholder="  Enter your email address"/>
                         </div>
                     </div>
@@ -24,8 +24,17 @@ const Jumbo = () => {
                         <button type="button" className="btn btn-primary">Get started</button>
                     </div>
                 </div>
-                <div className="col right__side">
-                    Shapes
+            
+                {/* HERO IMAGE */}
+                <div className="col-sm right__side">
+                    <div className="green__circle"></div>
+                    <div className="blue__circle"></div>
+                    <div className="triangle"></div>
+                    <div className="rect__video">
+                        <button type="button" className="btn btn-primary">
+                            <i className="fa fa-play"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>

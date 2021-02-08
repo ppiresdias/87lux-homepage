@@ -8,8 +8,8 @@
                 font-family: league-gothic, sans-serif; 
                 font-weight: 400;
                 font-style: normal;
-                font-size: 64px;
-                line-height: 78px;
+                font-size: vw(64px);
+                // line-height: 78px;
                 color: $font-color;
                 text-transform: capitalize;
             }
@@ -17,7 +17,7 @@
                     // font-family: 'Open Sans', sans-serif; 
                     font-style: normal;
                     font-weight: 700; // or 600
-                    font-size: $smallheading;
+                    font-size: vw($smallheading);
                     // line-height: 25px;
                     color: $font-light;
             }
@@ -28,7 +28,7 @@
                     width: 367px; // RESPONSIVE
                     height: 51px; // RESPONSIVE
                     background: $header-background;
-                    box-shadow: 0px 12px 42px 1px rgba(0, 0, 0, 0.15);
+                    box-shadow: 0px 12px 42px 1px $boxshadow-blur15;
                     border-radius: 5px;
                     border-style: none;
                     font-weight: 400;
@@ -38,13 +38,13 @@
             }
 
             .email-btn{
-                filter: drop-shadow(0px 9px 25px rgba(0, 0, 0, 0.15));
+                filter: drop-shadow(0px 9px 25px $boxshadow-blur15);
                 padding: 8px 0;
                 button{
                     width: 173px;
                     height: 51px;
                     background: #7E53FD;
-                    box-shadow: 0px 12px 42px 1px rgba(0, 0, 0, 0.15);
+                    box-shadow: 0px 12px 42px 1px $boxshadow-blur15;
                     border-radius: 5px;
                     border-style: none;
                     font-style: normal;
@@ -56,5 +56,271 @@
                 }
             }
         }
+
+        .right__side{
+            position: relative;
+            .green__circle{
+                position: absolute;
+                position: absolute;
+                top: vw(-70px);
+                left: vw(80px);
+                width: vw(240px);
+                height: vw(240px);
+                // width: 240px;
+                // height: 240px;
+                // top: -5.8vw;
+                // left: 6.6vw;
+                // width: 19vw;
+                // height: 19vw;
+                border-radius: 50%;
+                background: linear-gradient(52.27deg, #2E585E 14.81%, #F9E84A 86.16%);
+                box-shadow: 0 vw(12px) vw(42px) vw(1px) $boxshadow-blur25;
+            }
+
+            .blue__circle{
+                position: absolute;
+                top: vw(160px); // RESPONSIVE SIZES
+                left: vw(375px);
+                width: vw(257px);
+                height: vw(257px);
+                border-radius: 50%;
+                background: linear-gradient(52.27deg, #2E585E 14.81%, #00F0FF 86.16%);
+                box-shadow: 0 vw(12px) vw(42px) vw(1px) $boxshadow-blur15;
+            }
+
+            .triangle{
+                position: absolute;
+                top: vw(-150px);
+                left: vw(10px);
+                width: vw(650px);
+                height: vw(550px);
+                z-index: 5;
+                background: linear-gradient(231.07deg, #7D52FC 30.24%, #4ACAF9 84.45%);
+                transform: rotate(14.45deg);
+                clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+                box-shadow: 0 vw(12px) vw(42px) $boxshadow-blur25;
+            }
+
+            .rect__video{
+                position: absolute;
+                top: vw(15px);
+                width: vw(561px);
+                height: vw(298px);
+                z-index: 10;
+                background-image: linear-gradient(90deg, rgba(255, 145, 44, 0.87) 0%, rgba(255, 72, 66, 0.25) 100%), url(../public/pexels-fauxels-3184327.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                box-shadow: 0 vw(12px) vw(42px) vw(1px) $boxshadow-blur25;
+                border-radius: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                button{
+                    width: vw(68px);
+                    height: vw(68px);
+                    background: $header-background;
+                    border-color: $header-background;
+                    box-shadow: 0 vw(9px) vw(25px) vw(10px) $boxshadow-blur25;
+                    border-radius: 59px;
+                    position: absolute;
+                   
+                    .fa-play{
+                        color: black;
+                        font-size: vw(30px);
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+/*********************** MEDIA QUERIES *****************************/
+
+/* laptops */
+@media screen and (max-width: 992px) {
+    .jumbo-container{
+        padding-top: 160px;
+
+        .hero-section{
+            .left__side{
+                .hero-slogan{
+                    font-size: 48px;
+                }
+                .subtext{
+                    font-size: 14px;
+                }
+                .email-input-field{
+                    #input-email{
+                        width: 312px;
+                    }
+                }
+                .email-btn{
+                    button{
+                        width: 133px;
+                    }
+                }
+            }
+            .right__side{
+                .green__circle{
+                    top: vw(-10px);
+                }
+                .blue__circle{
+                    top: vw(220px);
+                }
+                .triangle{
+                    top: vw(-90px);
+                }
+                .rect__video{
+                    top: vw(75px); 
+                    
+                    button{
+                        // width: vw(88px);
+                        // height: vw(88px);
+                        .fa-play{
+                            // font-size: vw(39px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* tablets and large phones */
+@media screen and (max-width: 575px) {
+    .jumbo-container{
+        padding-top: 120px;
+        .hero-section{
+            .left__side{
+                text-align: center;
+                .hero-slogan{
+                    width: 80%;
+                    margin: auto;
+                }
+                .subtext{
+                    margin: 10px auto;
+                    font-weight: 600;
+                }
+                .email-input-field{
+                    margin: 8px 0;
+                    .form-group{
+                        margin: auto;
+                        #input-email{
+                            text-align: center;
+                        }
+                    }
+                    
+                }
+                .email-btn{
+                    margin: 10px 0;
+                    button{
+                        margin: auto;
+                    }
+                }
+            }
+            .right__side{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .green__circle{
+                    top: vw(110px);
+                    left: vw(425px);
+                    width: vw(288px);
+                    height: vw(288px);
+                }
+                .blue__circle{
+                    top: vw(420px);
+                    left: vw(735px);
+                    width: vw(308px);
+                    height: vw(308px);
+                }
+                .triangle{
+                    top: vw(10px);
+                    left: vw(300px);
+                    width: vw(780px);
+                    height: vw(715px);
+                }
+                .rect__video{
+                    top: vw(215px);    
+                    width: vw(661px);
+                    height: vw(398px); 
+                    
+                    button{
+                        width: vw(88px);
+                        height: vw(88px);
+                        .fa-play{
+                            font-size: vw(39px);
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+}
+
+/* small phones */
+@media screen and (max-width: 374px) {
+    .jumbo-container{
+        padding-top: 100px;
+        .hero-section{
+            .left__side{
+                .hero-slogan{
+                    font-size: 46px;
+                }
+                .subtext{
+                    margin: 10px auto;
+                    font-weight: 400;
+                }
+                .email-input-field{
+                    .form-group{
+                        #input-email{
+                            width: vw(1200px);
+                        }
+                    }
+                }
+            }
+            .right__side{
+                .green__circle{
+                    top: vw(110px);
+                    left: vw(325px);
+                    width: vw(388px);
+                    height: vw(388px);
+                }
+                .blue__circle{
+                    top: vw(620px);
+                    left: vw(835px);
+                    width: vw(408px);
+                    height: vw(408px);
+                }
+                .triangle{
+                    top: vw(10px);
+                    left: vw(150px);
+                    width: vw(1080px);
+                    height: vw(1015px);
+                }
+                .rect__video{
+                    top: vw(285px);    
+                    width: vw(861px);
+                    height: vw(598px);  
+                    
+                    button{
+                        width: vw(120px);
+                        height: vw(120px);
+                        .fa-play{
+                            font-size: vw(53px);
+                        }
+                    }
+                }
+            }
+        }
+        
     }
 }
