@@ -1,0 +1,29 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    // background-color: rgb(236, 230, 230);
+
+    /* placeholder font color for form fields */
+    ::-webkit-input-placeholder { /* WebKit browsers */
+        color: $font-light2 !important;
+        opacity: 1;
+    }
+    :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        color: $font-light2 !important;
+        opacity: 1;
+    }
+    ::-moz-placeholder { /* Mozilla Firefox 19+ */
+        color: $font-light2 !important;
+        opacity: 1;
+    }
+    :-ms-input-placeholder { /* Internet Explorer 10+ */
+        color: $font-light2 !important;
+        opacity: 1;
+    }
+
+    .fill__viewheight{
+        height: 100vh;
+        min-height:100%;
+        max-height:100%;
+        
+    }
+}

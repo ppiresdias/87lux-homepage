@@ -1,0 +1,60 @@
+
+.jumbo-container{
+   padding-top: 200px;
+   
+   .hero-section{
+       .left__side{
+            .hero-slogan{
+                font-family: league-gothic, sans-serif; 
+                font-weight: 400;
+                font-style: normal;
+                font-size: 64px;
+                line-height: 78px;
+                color: $font-color;
+                text-transform: capitalize;
+            }
+            .subtext{
+                    // font-family: 'Open Sans', sans-serif; 
+                    font-style: normal;
+                    font-weight: 700; // or 600
+                    font-size: $smallheading;
+                    // line-height: 25px;
+                    color: $font-light;
+            }
+
+            .email-input-field{
+                padding: 8px 0;
+                #input-email{
+                    width: 367px; // RESPONSIVE
+                    height: 51px; // RESPONSIVE
+                    background: $header-background;
+                    box-shadow: 0px 12px 42px 1px rgba(0, 0, 0, 0.15);
+                    border-radius: 5px;
+                    border-style: none;
+                    font-weight: 400;
+                    font-size: $small-font;
+                    color: $font-light2;
+                }
+            }
+
+            .email-btn{
+                filter: drop-shadow(0px 9px 25px rgba(0, 0, 0, 0.15));
+                padding: 8px 0;
+                button{
+                    width: 173px;
+                    height: 51px;
+                    background: #7E53FD;
+                    box-shadow: 0px 12px 42px 1px rgba(0, 0, 0, 0.15);
+                    border-radius: 5px;
+                    border-style: none;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 19px;
+                    color: white;
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
+}

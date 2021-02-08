@@ -1,6 +1,8 @@
 import Head from 'next/head'
 
-import Header from "../components/header";
+import Header from "../components/header"
+import Jumbo from "../components/jumbo"
+import Platforms from "../components/platforms"
 
 export default function Home() {
   return (
@@ -13,7 +15,11 @@ export default function Home() {
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
       </Head>
 
-      <Header />
+      <div className="fill__viewheight">
+        <Header />
+        <Jumbo />
+      </div>
+      <Platforms />
     </div>
   )
 }

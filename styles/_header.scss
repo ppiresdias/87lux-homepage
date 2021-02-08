@@ -8,17 +8,18 @@
     height: 63px;
     background: $header-background;
     box-shadow: 0px 9px 24px rgba(0, 0, 0, 0.15);
-    font-family: 'Open Sans', sans-serif; // move to common?
-    
+    padding-left: 63px; // RESPONSIVE PADDING 
+    background-color: $header-background !important;
     .navbar-brand{
         font-weight: 700;
         font-size: $heading;
+        text-transform: uppercase;
     }
 
     .nav-links{
         margin-left: auto;
+        //margin-left: 700px;
         .nav{
-            // line-height: 22px;
             .nav-link{
                 font-weight: 400;
                 font-size: $regular;

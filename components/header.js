@@ -1,19 +1,33 @@
+import Link from "next/link";
 
 const Header = () => {
     return (
-        <nav className="navbar navbar-expand-lg fixed-top navbar-light bg-light">
-            <a className="navbar-brand" href="#">87Lux</a>
+        <nav className="navbar navbar-expand-md fixed-top navbar-light bg-light">
+            <Link href="#">
+                <a className="navbar-brand">87Lux</a>
+            </Link>
 
             <div className="nav-links">
                 <ul className="nav">
                     <li className="nav-item">
-                        <a className="nav-link active" href="#">Themes</a>
+                        <Link href="#">
+                            <a className="nav-link active">Themes</a>
+                        </Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">Apps</a>
+                        <Link href="#">
+                            <a className="nav-link">Apps</a>
+                        </Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">Contact Us</a>
+                        <Link href="#">
+                            <a className="nav-link">Assets</a>
+                        </Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link href="#">
+                            <a className="nav-link">Contact Us</a>
+                        </Link>
                     </li>
                 </ul>
             </div>
