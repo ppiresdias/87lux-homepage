@@ -1,0 +1,177 @@
+
+.wrapper{
+    position: relative;
+    width: 2500px;
+    height: 574px;
+    // background: red;
+    background: transparent;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; 
+    z-index: 100;
+
+    .projects-container{
+        width: inherit;
+        height: inherit;
+        // background: chartreuse;
+        background: transparent;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center; 
+        position: absolute;
+        top: 0;
+        left: 0;
+    
+        .background__strip{
+            position: absolute;
+            left: 0;
+            width: 1544px;
+            height: 210px;
+            background: linear-gradient(180deg, #25293E 0%, #38394F 100%);
+            border-radius: 10px;
+            overflow-x: hidden;
+    
+            .align__left{
+                width: 110px;
+                height: inherit;
+                background: transparent;
+                display: flex;
+                justify-content: center;
+                align-items: center; 
+                .vertical_text{
+                    font-family: "Open Sans", condensed;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 12px;
+                    line-height: 16px;
+                    color: #FFFFFF;
+                    transform: rotate(90deg);
+                    text-transform: uppercase;
+                }
+            }
+            
+        }
+    }
+
+    .overlay{
+        width: inherit;
+        height: 374px;
+        background: transparent;
+        // background: blue;
+        position: absolute;
+        left: 10%;
+        z-index: 10;
+        display: flex;
+        justify-content: flex-start;
+
+        .project-field{
+            width: 560px;
+            height: 346px;
+            // background: cornflowerblue;
+            margin-right: 10px;
+            background: url(../public/pexels-fauxels-3184327.jpg), #FFFFFF;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            box-shadow: 0px 12px 42px 1px rgba(0, 0, 0, 0.15);
+            border-radius: 10px;
+        }
+    }
+}
+
+.view-btns{
+    // width: 567px;
+    // height: 100px;
+    // align-self: flex-end;
+    margin: -20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+
+    .btn{
+        max-width: 173px;
+        height: 51px;
+        border: 1px solid $btn-color;
+        box-shadow: 0px 12px 42px 1px rgba(0, 0, 0, 0.15);
+        border-radius: 5px;
+        color: $btn-color;
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 19px;
+        text-align: center;
+        text-transform: capitalize;
+        margin: 0 10.5px;
+    }
+}
+
+
+/* large devices */
+@media screen and (max-width: 992px) {
+   .wrapper{
+       .projects-container{
+           .background__strip{
+               margin-left: -40px;
+               .align__left{
+                   .vertical_text{
+                    font-weight: 600;
+                   }
+               }
+           }
+       }
+   }
+}
+
+/* medium devices */
+@media screen and (max-width: 762px){
+    .wrapper{
+       .projects-container{
+           .background__strip{
+                margin-left: -20px;
+               .align__left{
+                   .vertical_text{
+                        padding-top: 40px;
+                   }
+               }
+           }
+       }
+   }
+}
+
+/* small devices */
+@media screen and (max-width: 576px){
+    .wrapper{
+       .projects-container{
+           .background__strip{
+                margin-left: 50px;
+           }
+       }
+       .overlay{
+           left: 5%;
+       }
+   }
+   .view-btns{
+       flex-direction: column;
+       margin-top: -80px;
+       .btn{
+            margin-bottom: 20px; 
+            min-height: 51px;
+       }
+   }
+}
+
+
+/* very small devices */
+@media screen and (max-width: 576px){
+    .wrapper{
+       .projects-container{
+           .background__strip{
+                margin-left: 50px;
+           }
+       }
+       .overlay{
+           left: 5%;
+       }
+   }
+}

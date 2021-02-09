@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Header from "../components/header"
 import Jumbo from "../components/jumbo"
 import Platforms from "../components/platforms"
+import Projects from "../components/projects"
 
 export default function Home() {
   return (
@@ -20,7 +21,8 @@ export default function Home() {
         <Header />
         <Jumbo />
       </div>
-      {/* <Platforms /> */}
+      <Platforms />
+      <Projects />
     </div>
   )
 }

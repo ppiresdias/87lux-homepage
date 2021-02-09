@@ -1,0 +1,116 @@
+.platforms{
+    margin-top: 120px;
+    
+    .heading{
+        font-family: "Open Sans" condensed;
+        font-style: normal;
+        font-weight: bold;
+        font-size: $tiny-font;
+        line-height: 16px;
+        color: $font-light;
+        text-transform: uppercase;
+    }
+
+    .justify-content-center{
+        width: vw(948px);
+        margin: auto;
+
+        .col-sm{
+        }
+        #shopify{
+            margin-top: 12px;
+        }
+        #wp{
+            margin-top: 12px;
+        }
+        #big-commerce{
+            margin-top: -20px;
+        }
+        #wix{
+           margin-top: 45px;
+        }
+    }
+
+}
+
+
+/*** Media queries *****/
+
+/* laptops */
+@media screen and (max-width: 992px){
+    .platforms{
+        margin-top: 80px;
+
+        .justify-content-center{
+            width: 100%;
+            #big-commerce{
+                margin-top: 0px;
+            }
+            #wix{
+               margin-top: 40px;
+            }
+        }
+    }
+}
+/* tablets */
+@media screen and (max-width: 767px){
+    .platforms{
+        .justify-content-center{
+            width: vw(1000px);
+        }
+    }
+}
+/* small devices */
+@media screen and (max-width: 575px){
+    .platforms{
+        margin-top: 400px;
+        
+        .heading{
+            padding-bottom: 20px;
+            font-size: 16px;
+            p{
+                margin: 15px;
+            }
+        }
+        .justify-content-center{
+            width: vw(500px);
+          
+            .col-sm{
+               
+            }
+            #shopify{
+                margin-top: 12px;
+            }
+            #wp{
+                margin-top: 12px;
+            }
+            #big-commerce{
+                margin-top: 0px;
+            }
+            #wix{
+               margin-top: 40px;
+            }
+        }
+    }
+}
+/* very small mobile devices */
+@media screen and (max-width:491px){
+    .platforms{
+        margin-top: 330px;
+
+        .heading{
+            padding-bottom: 20px;
+            font-size: 16px;
+            p{
+                margin-left: 15px;
+            }
+        }
+        .justify-content-center{
+            width: vw(700px);
+
+            #big-commerce{
+                margin-top: -35px;
+            }
+        }
+    }
+}
