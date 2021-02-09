@@ -62,16 +62,17 @@
             .green__circle{
                 position: absolute;
                 position: absolute;
-                top: vw(-70px);
-                left: vw(80px);
-                width: vw(240px);
-                height: vw(240px);
+
                 // width: 240px;
                 // height: 240px;
                 // top: -5.8vw;
                 // left: 6.6vw;
                 // width: 19vw;
                 // height: 19vw;
+                top: vw(-70px);
+                left: vw(80px);
+                width: vw(240px);
+                height: vw(240px);
                 border-radius: 50%;
                 background: linear-gradient(52.27deg, #2E585E 14.81%, #F9E84A 86.16%);
                 box-shadow: 0 vw(12px) vw(42px) vw(1px) $boxshadow-blur25;
@@ -142,6 +143,73 @@
 
 
 /*********************** MEDIA QUERIES *****************************/
+
+/* large devices */
+@media screen and (min-width: 1300px) {
+    .jumbo-container{
+        padding-top: 160px;
+
+        .hero-section{
+            .left__side{
+                .hero-slogan{
+                    font-size: 64px;
+                }
+                .subtext{
+                    font-size: $smallheading;
+                }
+                .email-input-field{
+                    #input-email{
+                        width: 312px;
+                    }
+                }
+                .email-btn{
+                    button{
+                        width: 133px;
+                    }
+                }
+            }
+            .right__side{
+                .green__circle{
+                    top: -70px;
+                    left: 80px;
+                    width: 240px;
+                    height: 240px;
+                    box-shadow: 0 12px 42px 1px $boxshadow-blur25;
+                }
+                .blue__circle{
+                    top: 160px; // RESPONSIVE SIZES
+                    left: 375px;
+                    width: 257px;
+                    height: 257px;
+                    box-shadow: 0 12px 42px 1px $boxshadow-blur15;
+                }
+                .triangle{
+                    top: -150px;
+                    left: 10px;
+                    width: 650px;
+                    height: 550px;
+                    z-index: 5;
+                    box-shadow: 0 12px 42px $boxshadow-blur25;
+                }
+                .rect__video{
+                    top: 15px;
+                    width: 561px;
+                    height: 298px;
+                    box-shadow: 0 12px 42px 1px $boxshadow-blur25;
+                    
+                    button{
+                        width: 68px;
+                        height: 68px;
+                        box-shadow: 0 9px 25px 10px $boxshadow-blur25;                      
+                        .fa-play{
+                            font-size: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 /* laptops */
 @media screen and (max-width: 992px) {
