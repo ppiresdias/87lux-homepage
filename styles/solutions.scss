@@ -1,0 +1,405 @@
+
+.solutions-wrapper{
+    width: 100%;
+    height: 431px;
+    // background: palegreen;
+    position: relative;
+    margin-top: 150px;
+
+    .container{
+
+        .row{
+            margin: 1px;
+        }
+
+        #solutions-heading{
+            margin-bottom: 90px;
+
+            h1{
+                margin: auto;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 48px;
+                line-height: 65px;
+                color: #38394F;
+                text-transform: capitalize;
+            }
+        }
+
+        #solutions-list{
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+
+            .list-menu{
+                width: 173px;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 35px; /* or 250% */
+                text-transform: capitalize;
+
+                .solution-item{
+                    color: $font-light2;
+    
+                    span{
+                        margin-right: 5px;
+                    }
+    
+                }
+    
+                .active__item{
+                    color: $font-color;
+    
+                    span{
+                        margin-right: 5px;
+                        color: #38AF43;
+                    }
+                }
+            }
+            
+            .list-main{
+                width: 947px;
+                height: 435px;
+                background: #FFFFFF;
+                box-shadow: 0px 12px 42px 1px rgba(0, 0, 0, 0.15);
+                border-radius: 0 0 0 5px;
+                border-top: 3px solid #38AF43;
+                position: relative;
+
+                .default__hidden{
+                    display: none;
+                    background: $header-background ;
+                    
+                    .heading{
+                        height: 45px;
+                        text-align: center;           
+                        color: #000000;
+                        text-transform: capitalize;
+
+                        // background: orange;
+                        h5{
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 18px;
+                            line-height: 250%; /* identical to box height, or 45px */
+                            margin: auto;
+                        }
+                    }
+
+                    .description{
+                        height: 112px;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 157.18%; /* or 22px */
+                        text-align: justify;
+                        color: #38394F;
+                        margin-top: 11px;
+                        margin: 11px 20px;
+                    }
+
+                    .right-img{
+                        width: 100%;
+                        height: 300px;
+                        // background: lavender;
+                        background: url(../public/girl-computer.jpg);
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        margin-top: -40px;
+                        margin-left: 0px;
+                    }
+                }
+                .info{
+                    height: 400px;
+                    background: $header-background ;
+                    
+                    .heading{
+                        height: 45px;
+                        text-align: center;           
+                        color: #000000;
+                        text-transform: capitalize;
+
+                        // background: orange;
+                        h5{
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 18px;
+                            line-height: 250%; /* identical to box height, or 45px */
+                            margin: auto;
+                        }
+                    }
+
+                    .description{
+                        height: 112px;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 157.18%; /* or 22px */
+                        text-align: justify;
+                        color: #38394F;
+                        margin-top: 11px;
+
+                        // background: pink;
+                    }
+                }
+
+                .img{
+                    padding: 0px;
+                    position: absolute;
+                    top: -4px;
+                    right: -4px;
+                    .row{
+                        margin: 0px;
+                    }
+                    .grey__space{
+                        height: 37px;
+                        background: #E5E5E5;
+                    }
+
+                    .left-img{
+                        width: 270px;
+                        height: 399px;
+                        margin-left: 0px;
+                        // background: lavender;
+                        background: url(https://jaccblog.com/wp-content/uploads/2017/05/bostan-minimal-business-wordpress-website-theme-1.jpg);
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                    }
+
+                    .right-img{
+                        width: 367px;
+                        height: 399px;
+                        
+                        // background: lavender;
+                        background: url(../public/girl-computer.jpg);
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                    }
+                }
+            }
+        }
+
+        .wrapper-footer{
+           text-align: center;
+            margin-top: 75px;
+           
+            .center{
+                display: inline-block;
+
+                #budget-text{
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 33px; /* identical to box height */
+                    text-align: center;
+                    color: #FFFFFF;
+                }
+
+                .btn{
+                    margin-top: 34px;
+                    width: 173px;
+                    height: 51px;
+                    background: #7E53FD;
+                    box-shadow: 0px 12px 42px 1px rgba(0, 0, 0, 0.15);
+                    border-radius: 5px;
+
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 14px;
+                    line-height: 19px; /* identical to box height */
+                    text-align: center;
+                    color: #FFFFFF;
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
+
+}
+
+.footer{
+    width: 100%;
+    height: 480px;
+    background: $footer-background;
+}
+
+
+
+/* large devices */
+@media screen and (max-width: 1200px){
+    .solutions-wrapper{
+        .container{
+            #solutions-list{
+
+                .list-menu{
+                    // font-weight: 400;
+                    // font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+/* large devices */
+@media screen and (max-width: 992px){
+    .solutions-wrapper{
+        .container{
+            #solutions-list{
+                .list-main{
+                    padding: 0;
+                    .info{
+                        .heading{
+                            h5{
+                                font-size: 16px;
+                            }
+                        }
+                        .description{
+                            font-size: 14px;
+                        }
+                    }
+                    .img{
+                       
+                        .grey__space{
+                            height: 20px;
+                        }
+                        .left-img{
+                            display: none;
+                        }
+                        .right-img{
+                            height: 417px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* medium devices */
+@media screen and (max-width: 768px){
+    .solutions-wrapper{
+
+        .container{
+            #solutions-heading{
+                margin-bottom: 50px;
+                h1{
+                    font-size: 36px;
+                }
+            }
+            #solutions-list{
+                .list-main{
+
+                    .default__hidden{
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*small devices */
+@media screen and (max-width: 576px){
+    .solutions-wrapper{
+
+        .container{
+            #solutions-heading{
+                margin-bottom: 30px;
+                h1{
+                    font-size: 32px;
+                }
+            }
+            #solutions-list{
+                .list-main{
+
+                    .mobile-info{
+                        .description{
+                            margin: 11px 30px;
+                        }
+                    
+                    }
+                    .mobile-img{
+                        .right-img{}
+                    }
+                }
+                .list-menu{
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+    .footer{
+        height: 800px;
+    }
+}
+
+/* very small devices */
+@media screen and (max-width: 491px){
+    .solutions-wrapper{
+
+        .container{
+            #solutions-heading{
+                margin-bottom: 30px;
+                h1{
+                    font-size: 28px;
+                }
+            }
+            #solutions-list{
+                .list-main{
+
+                    .mobile-info{
+                        .description{
+                            // font-size: 12px;
+                        }
+                    
+                    }
+                    .mobile-img{
+                        .right-img{
+                            margin-top: -50px;
+                        }
+                    }
+                }
+            }
+            .wrapper-footer{
+                margin-top: 120px;
+            }
+        }
+    }
+}
+
+/* very small devices */
+@media screen and (max-width: 400px){
+    .solutions-wrapper{
+
+        .container{
+            #solutions-heading{
+                margin-bottom: 20px;
+                h1{
+                    font-size: 24px;
+                }
+            }
+            #solutions-list{
+                .list-menu{
+                    width: 130px;
+                    font-size: 12px;
+                    font-weight: 400;
+                }
+                .list-main{
+
+                    .mobile-img{
+                        .right-img{
+                            margin-top: -30px;
+                        }
+                    }
+                }
+            }
+            .wrapper-footer{
+                margin-top: 120px;
+            }
+        }
+    }
+}

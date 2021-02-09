@@ -1,0 +1,335 @@
+
+.team-wrapper{
+    width: 1204px;
+    height: 730px;
+    margin-top: 120px;
+    // background: palegoldenrod;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    .heading{
+        font-style: normal;
+        font-weight: 300;
+        font-size: 48px;
+        line-height: 65px;
+        text-align: center;
+        letter-spacing: 0.255em;
+        color: #38394F;
+        // background: darkcyan;
+        text-transform: capitalize;
+    }
+
+    .team__member{
+        position: absolute;
+        box-sizing: border-box;
+        border: 5px solid;
+        border-radius: 50%;
+        z-index: 10;
+    }
+
+    #team-member1{
+        top: 54px;
+        left: 180px;
+        width: 80px;
+        height: 80px;
+        background: url(../public/team-member1.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-color:#A82282;
+        box-shadow: 0px 12px 42px 1px rgba(168, 34, 130, 0.4);
+          
+    }
+
+    #team-member2{
+        top: 115px;
+        left: 522px;
+        width: 135px;
+        height: 135px;
+        background: url(../public/team-member3.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-color: #38AF43;
+        box-shadow: 0px 12px 42px 1px rgba(56, 175, 67, 0.4);
+          
+    }
+
+    #team-member3{
+        top: 0;
+        right: 225px;
+        width: 80px;
+        height: 80px;
+        background: url(../public/team-member5.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-color: rgba(255, 145, 44, 0.87);
+        box-shadow: 0px 12px 42px 1px rgba(255, 145, 44, 0.4);
+          
+    }
+
+    #team-member4{
+        top: 222px;
+        right: 0px;
+        width: 132px;
+        height: 132px;
+        background: url(../public/team-member6.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-color: #7D52FC;
+        box-shadow: 0px 12px 42px 1px rgba(125, 82, 252, 0.4);
+          
+    }
+
+    #team-member5{
+        bottom: 184px;
+        left: 6px;
+        width: 185px;
+        height: 185px;
+        background: url(../public/team-member7.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-color: #5296FC;
+        box-shadow: 0px 12px 42px 1px rgba(82, 150, 252, 0.4);
+          
+    }
+
+    #team-member6{
+        bottom: 0px;
+        left: 307px;
+        width: 80px;
+        height: 80px;
+        background: url(../public/team-member2.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-color: #EEFC52;
+        box-shadow: 0px 12px 42px 1px rgba(238, 252, 82, 0.4);
+          
+    }
+
+    #team-member7{
+        bottom: 169px;
+        right: 257px;
+        width: 80px;
+        height: 80px;
+        background: url(../public/team-member4.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-color: #E46942;
+        box-shadow: 0px 12px 42px 1px rgba(228, 105, 66, 0.4);
+          
+    }
+}
+
+
+/* x-large devices */
+@media screen and (max-width: 1200px){
+    .team-wrapper{
+
+        #team-member1{
+            left: 10%;
+        }
+
+        #team-member2{
+            left: 40%;
+        }
+
+        #team-member3{
+            right: 10%;
+        }
+
+        #team-member4{
+           
+        }
+
+        #team-member5{
+            width: 165px;
+            height: 165px;
+        }
+
+        #team-member6{
+           left: 30%;
+        }
+
+        #team-member7{
+            right: 20%;
+         }
+    }
+}
+
+/* large devices */
+@media screen and (max-width: 992px){
+    .team-wrapper{
+
+        // #team-member1{
+        //     left: 10%;
+        // }
+
+        // #team-member2{
+        //     left: 40%;
+        // }
+
+        // #team-member3{
+        //     right: 10%;
+        // }
+
+        // #team-member4{
+           
+        // }
+
+        // #team-member5{
+        //     width: 165px;
+        //     height: 165px;
+        // }
+
+        // #team-member6{
+        //    left: 30%;
+        // }
+
+        // #team-member7{
+        //     right: 20%;
+        //  }
+    }
+}
+
+/* medium devices */
+@media screen and (max-width: 768px){
+    .team-wrapper{
+
+        .heading{
+            font-size: 36px;
+        }
+        #team-member1{
+           
+        }
+
+        #team-member2{
+            width: 120px;
+            height: 120px;
+            
+        }
+
+        #team-member3{
+           
+        }
+
+        #team-member4{
+            top: 29%;
+            right: 0px;
+            width: 120px;
+            height: 120px;
+        }
+
+        #team-member5{
+            width: 155px;
+            height: 155px;
+            bottom: 164px;
+        }
+
+        #team-member6{
+           left: 35%;
+        }
+
+        #team-member7{
+            right: 15%;
+            bottom: 130px;
+         }
+    }
+}
+
+/*small devices */
+@media screen and (max-width: 576px){
+    .team-wrapper{
+        width: 100%;
+        .heading{
+        }
+        #team-member1{
+           
+        }
+
+        #team-member2{
+            width: 120px;
+            height: 120px;
+            
+        }
+
+        #team-member3{
+           
+        }
+
+        #team-member4{
+            top: 29%;
+            right: 0px;
+            width: 120px;
+            height: 120px;
+        }
+
+        #team-member5{
+            width: 155px;
+            height: 155px;
+            bottom: 164px;
+        }
+
+        #team-member6{
+           left: 35%;
+        }
+
+        #team-member7{
+            right: 15%;
+            bottom: 130px;
+         }
+    }
+}
+
+/* very small devices */
+@media screen and (max-width: 400px){
+    .team-wrapper{
+        .heading{
+            font-size: 24px;
+        }
+        #team-member1{
+           
+        }
+
+        #team-member2{
+            width: 100px;
+            height: 100px;
+            top: 28%;
+            left: 10px;
+            
+        }
+
+        #team-member3{
+           
+        }
+
+        #team-member4{
+            top: 20%;
+            right: 0px;
+            width: 120px;
+            height: 120px;
+        }
+
+        #team-member5{
+            width: 145px;
+            height: 145px;
+            bottom: 164px;
+        }
+
+        #team-member6{
+           left: 35%;
+        }
+
+        #team-member7{
+            right: 10%;
+            bottom: 130px;
+         }
+    }
+}

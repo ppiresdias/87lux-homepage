@@ -27,8 +27,8 @@ const Projects = () => {
                 </div>
             </div>
             <div className="row view-btns">
-                <button type="button" class="btn col">view themes</button>
-                <button type="button" class="btn col">view apps</button>
+                <button type="button" className="btn col">view themes</button>
+                <button type="button" className="btn col">view apps</button>
             </div>
          </>
     );

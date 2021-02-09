@@ -4,6 +4,8 @@ import Header from "../components/header"
 import Jumbo from "../components/jumbo"
 import Platforms from "../components/platforms"
 import Projects from "../components/projects"
+import Team from "../components/team"
+import Solutions from "../components/solutions"
 
 export default function Home() {
   return (
@@ -23,6 +25,8 @@ export default function Home() {
       </div>
       <Platforms />
       <Projects />
+      <Team />
+      <Solutions />
     </div>
   )
 }
