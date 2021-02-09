@@ -103,6 +103,12 @@
         text-align: center;
         text-transform: capitalize;
         margin: 0 10.5px;
+        background: transparent;
+        transition: background 0.3s ease-in-out;
+        &:hover{
+            background: $btn-color-hover;
+            color: white;
+        }
     }
 }
 

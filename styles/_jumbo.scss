@@ -53,6 +53,10 @@
                     line-height: 19px;
                     color: white;
                     text-transform: capitalize;
+                    transition: background 0.3s ease-in-out;
+                    &:hover{
+                        background: #6842db;
+                    }
                 }
             }
         }
@@ -126,13 +130,17 @@
                     box-shadow: 0 vw(9px) vw(25px) vw(10px) $boxshadow-blur25;
                     border-radius: 59px;
                     position: absolute;
-                   
+                    transition: background 0.3s ease-in-out;
+
                     .fa-play{
                         color: black;
                         font-size: vw(30px);
                         display: flex;
                         justify-content: center;
                         align-items: center;
+                    }&:hover{
+                        background: #f1f1f1;
+                    
                     }
                 }
             }
