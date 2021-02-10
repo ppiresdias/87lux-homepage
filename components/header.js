@@ -1,52 +1,6 @@
 import Link from "next/link";
-import {gsap} from "gsap";
-
 
 const Header = () => {
-    let tl = gsap.timeline()
-
-    tl.fromTo('.hero-slogan', {
-        x: -200,
-        opacity: 0,
-    }, {
-        x: 0,
-        opacity: 1,
-        delay: 0.5,
-        duration: 1.3
-    })
-    .fromTo('.subtext', {
-        x: -200,
-        opacity: 0,
-    }, {
-        x: 0,
-        opacity: 1,
-        delay: 0.5,
-        duration: 1.3
-    },
-    "<0.5"   
-    )  
-    .fromTo('#input-email', {
-        x: -200,
-        opacity: 0,
-    }, {
-        x: 0,
-        opacity: 1,
-        delay: 0.5,
-        duration: 1.3
-    },
-    "<0.5"   
-    ).fromTo('.email-btn', {
-        x: -200,
-        opacity: 0,
-    }, {
-        x: 0,
-        opacity: 1,
-        delay: 0.5,
-        duration: 1.3
-    },
-    "<0.5"   
-    ) 
-
     return (
         <nav className="navbar navbar-expand-lg fixed-top navbar-light bg-light">
             <div className="container">
