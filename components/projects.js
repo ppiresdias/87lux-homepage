@@ -15,13 +15,13 @@ const Projects = () => {
                 <div className="overlay">
                     <div className="row">
                         <div className="">
-                            <div className="project-field"></div>
+                            <div className="project-field project-1"></div>
                         </div>
                         <div className="">
-                            <div className="project-field"></div>
+                            <div className="project-field project-2"></div>
                         </div>
                         <div className="">
-                            <div className="project-field"></div>
+                            <div className="project-field project-3"></div>
                         </div>
                     </div>
                 </div>

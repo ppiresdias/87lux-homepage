@@ -69,12 +69,33 @@
             height: 346px;
             // background: cornflowerblue;
             margin-right: 10px;
-            background: url(../public/pexels-fauxels-3184327.jpg), #FFFFFF;
+            // background: url(../public/pexels-fauxels-3184327.jpg), #FFFFFF;
+            // background-position: center;
+            // background-repeat: no-repeat;
+            // background-size: cover;
+            box-shadow: 0px 12px 42px 1px rgba(0, 0, 0, 0.15);
+            border-radius: 10px;
+        }
+
+        .project-1{
+            background: url(https://www.bootstrapdash.com/wp-content/uploads/2018/09/purple-dashboard-template.png), #FFFFFF;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-            box-shadow: 0px 12px 42px 1px rgba(0, 0, 0, 0.15);
-            border-radius: 10px;
+        }
+
+        .project-2{
+            background: url(https://cdn.dribbble.com/users/1516203/screenshots/3296040/deli2_1x.png), #FFFFFF;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .project-3{
+            background: url(https://templatemag.com/wp-content/uploads/remix-music-website-template.jpg), #FFFFFF;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
         }
     }
 }
