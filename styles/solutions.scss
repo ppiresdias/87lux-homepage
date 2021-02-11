@@ -71,6 +71,9 @@
                     display: none;
                     background: $header-background ;
                     
+                    #hide{
+                        display: block;
+                    }
                     .heading{
                         height: 45px;
                         text-align: center;           
@@ -298,6 +301,9 @@
             #solutions-list{
                 .list-main{
 
+                    #hide{
+                        display: none;
+                    }
                     .default__hidden{
                         display: block;
                     }

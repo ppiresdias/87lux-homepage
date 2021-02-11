@@ -4,7 +4,7 @@ import Image from "next/image";
 const Projects = () => {
     return (
         <>
-            <div className="wrapper container">
+            <div className="wrapper container" id="projects-section">
                 <div className="projects-container container">
                     <div className="background__strip align-items-center">
                         <div className="align__left">
@@ -25,10 +25,11 @@ const Projects = () => {
                         </div>
                     </div>
                 </div>
+                <div className="trigger-team-animation"></div>
             </div>
             <div className="row view-btns">
-                <button type="button" className="btn col">view themes</button>
-                <button type="button" className="btn col">view apps</button>
+                <button type="button" className="btn col" id="view-themes-btn">view themes</button>
+                <button type="button" className="btn col" id="view-apps-btn">view apps</button>
             </div>
          </>
     );

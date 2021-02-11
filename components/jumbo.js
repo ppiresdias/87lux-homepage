@@ -21,7 +21,7 @@ const Jumbo = () => {
                         </div>
                     </div>
                     <div className="row email-btn">
-                        <button type="button" className="btn btn-primary">Get started</button>
+                        <button type="button" className="btn btn-primary" id="jumbo-btn">Get started</button>
                     </div>
                 </div>
             

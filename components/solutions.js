@@ -33,7 +33,7 @@ const Solutions = () => {
                         </div>
                         <div className="col-sm list-main" id="list-main">
 
-                            {/* <div className="row">
+                            <div className="row" id="hide">
                                 <div className="col-4 info">
                                     <div className="row heading">
                                        <h5>install theme</h5>
@@ -52,7 +52,7 @@ const Solutions = () => {
                                         <div className="col right-img"></div>
                                     </div>
                                 </div>
-                            </div> */}
+                            </div>
 
                             <div className="row default__hidden mobile-info">
                                 <div className="row heading">
@@ -74,7 +74,7 @@ const Solutions = () => {
                     <div className="wrapper-footer ">
                         <div className="center">
                             <div className="row" id="budget-text">We work with any budget!</div>
-                            <button type="button" className="row btn">Let's get started</button>
+                            <button type="button" className="row btn" id="solutions-btn">Let's get started</button>
                         </div>
 
                     </div>

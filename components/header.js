@@ -1,4 +1,5 @@
 import Link from "next/link";
+import {gsap }from "gsap";
 
 const Header = () => {
     return (
