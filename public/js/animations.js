@@ -109,10 +109,12 @@ document.addEventListener("DOMContentLoaded", function(event){
         )
         .fromTo('#jumbo-btn', {
             y: 50,
+            scale: 0,
             opacity: 0,
         },{
             y: 0,
             opacity: 1,
+            scale: 1,
             delay: .5,
             duration: 1.3
         },
@@ -126,7 +128,7 @@ document.addEventListener("DOMContentLoaded", function(event){
             duration: 1,
             yoyo: true
         },
-         ">-0.5"
+        //  ">-0.5"
         )
         .fromTo('#solutions-btn', {
             scale:1,
