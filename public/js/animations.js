@@ -110,7 +110,7 @@ document.addEventListener("DOMContentLoaded", function(event){
         .fromTo('#jumbo-btn', {
             y: 50,
             scale: 0,
-            opacity: 0,
+            opacity: 0
         },{
             y: 0,
             opacity: 1,
@@ -128,10 +128,23 @@ document.addEventListener("DOMContentLoaded", function(event){
             duration: 1,
             yoyo: true
         },
-        //  ">-0.5"
+         ">-0.1"
         )
+        .staggerFrom(".platform-logos", 2, {
+            scale: 0,
+            cycle: {
+              y: [-50, 50]
+            },
+            ease: Elastic.easeOut,
+            stagger: {
+              from: "center",
+              amount: 0.25
+            }
+          },
+          ">-2"
+          )
         .fromTo('#solutions-btn', {
-            scale:1,
+            scale:1
         },{
             scale: 1.1,
             repeat: -1,
@@ -157,33 +170,33 @@ document.addEventListener("DOMContentLoaded", function(event){
 
     let homeController = new ScrollMagic.Controller();
 
-        // PLATFORM SECTION
+    //     // PLATFORM SECTION
 
-        let tlPlatform = new TimelineMax();
-        tlPlatform.staggerFrom(".platform-logos", 1.25, {
-          scale: 0,
-          cycle: {
-            y: [-50, 50]
-          },
-          ease: Elastic.easeOut,
-          stagger: {
-            from: "center",
-            amount: 0.25
-          }
-        });
+    //     let tlPlatform = new TimelineMax();
+    //     tlPlatform.staggerFrom(".platform-logos", 1.25, {
+    //       scale: 0,
+    //       cycle: {
+    //         y: [-50, 50]
+    //       },
+    //       ease: Elastic.easeOut,
+    //       stagger: {
+    //         from: "center",
+    //         amount: 0.25
+    //       }
+    //     });
         
-        var platformScene = new ScrollMagic.Scene({
-            triggerElement: ".rect__video",
-            triggerHook: 0
-          })
-            // .addIndicators({
-            // colorTrigger: "black",
-            // colorStart: "black",
-            // colorEnd: "black",
-            //   indent: 5
-            // })
-            .setTween(tlPlatform)
-            .addTo(homeController);
+    //     var platformScene = new ScrollMagic.Scene({
+    //         triggerElement: ".rect__video",
+    //         triggerHook: 0
+    //       })
+    //         // .addIndicators({
+    //         // colorTrigger: "black",
+    //         // colorStart: "black",
+    //         // colorEnd: "black",
+    //         //   indent: 5
+    //         // })
+    //         .setTween(tlPlatform)
+    //         .addTo(homeController);
 
 
         // PROJECTS SECTION
@@ -197,7 +210,7 @@ document.addEventListener("DOMContentLoaded", function(event){
         }
 
         tlProjectScroll.fromTo('#projects-section', {
-            x: '100%',
+            x: '6000px',
             opacity: 0
         },{
             x:0,
@@ -209,7 +222,7 @@ document.addEventListener("DOMContentLoaded", function(event){
         let projectScene = new ScrollMagic.Scene({
             triggerElement: '#projects-section',
             triggerHook: 1,
-            duration: 400, // projectElement.offsetHeight returning 0 so this will have to for now
+            duration: 800, // projectElement.offsetHeight returning 0 so this will have to for now
         })
         .setTween(tlProjectScroll)
         // .addIndicators()
@@ -222,7 +235,7 @@ document.addEventListener("DOMContentLoaded", function(event){
             tlProjectButtons.staggerFrom('#view-apps-btn', 1, {x: 50, opacity:0}, .2, ">-1.2")
         
             let projBtnsScene = new ScrollMagic.Scene({
-                triggerElement: "#projects-section",
+                triggerElement: "#platforms-section",
                 triggerHook: 0
               })
                 // .addIndicators({
@@ -252,7 +265,7 @@ document.addEventListener("DOMContentLoaded", function(event){
         });
         
         var teamScene = new ScrollMagic.Scene({
-            triggerElement: ".trigger-team-animation",
+            triggerElement: ".background__strip",
             triggerHook: 0
           })
             // .addIndicators({
@@ -271,11 +284,12 @@ document.addEventListener("DOMContentLoaded", function(event){
 
         let tlSolutions = new TimelineMax();
 
-        tlSolutions.staggerFrom('.solution-item', 1, {x: 100, opacity:0}, .2)
-                    .staggerFrom('#list-main', 1, {y: 100, opacity: 0}, .2,  ">-1");
+        tlSolutions.staggerFrom('#list-main', 1, {y: 100, opacity: 0}, .2)
+                   .staggerFrom('.solution-item', 1, {x: 100, opacity:0}, .2, ">-0");
+                 
         
         let solutionsScene = new ScrollMagic.Scene({
-            triggerElement: "#team-member6",
+            triggerElement: "#team-member5",
             triggerHook: 0
           })
             // .addIndicators({

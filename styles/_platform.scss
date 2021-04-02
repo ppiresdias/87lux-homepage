@@ -39,12 +39,42 @@
 /* large devices */
 @media screen and (min-width: 1300px) {
     .platforms{
+        margin-top: 280px;
+
         .justify-content-center{
             width: 948px;
+            #wp{
+                margin-top: 5px;
+            }
+            #big-commerce{
+                margin-top: -20px;
+            }
+            #wix{
+               margin-top: 50px;
+            }
         }
     }
 }
 
+// /* desktops */
+// @media screen and (min-width: 1920px){
+//     .platforms{
+//         margin-top: 280px;
+
+//         .justify-content-center{
+//             width: 100%;
+//             #wp{
+//                 margin-top: -5px;
+//             }
+//             #big-commerce{
+//                 margin-top: -40px;
+//             }
+//             #wix{
+//                margin-top: 50px;
+//             }
+//         }
+//     }
+// }
 /* laptops */
 @media screen and (max-width: 992px){
     .platforms{
